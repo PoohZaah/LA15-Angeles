@@ -1,0 +1,7 @@
+<h1> My blog  list </h1>
+
+<ul>
+    {% for post in blog_list %}
+        <a href="{% url 'blog_detail' id=post.id %}"><li>{{post}}</li></a>
+    {% endfor %}
+</ul>
